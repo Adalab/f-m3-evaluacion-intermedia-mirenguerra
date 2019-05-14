@@ -5,7 +5,7 @@ import pokemons from '../PokemonArray';
 class PokemonList extends React.Component{
     render(){
         return(
-            <div>
+            <div className="pokemon--list">
                 {pokemons.map((pokemon)=> {
                     return(
                     <PokemonCard
@@ -15,21 +15,6 @@ class PokemonList extends React.Component{
                         types= {pokemon.types}
                     />)
                 })}
-            {/* <PokemonCard 
-                name="caterpie" 
-                url="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10.png"
-                types={["bug", "hola"]}
-            />
-            <PokemonCard 
-                name="caterpie" 
-                url="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10.png"
-                types={["bug", "hola"]}
-            />
-            <PokemonCard 
-                name="caterpie" 
-                url="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10.png"
-                types={["bug", "hola"]}
-            /> */}
             </div>
         )
     }

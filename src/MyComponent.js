@@ -6,7 +6,7 @@ import PokemonList from './components/PokemonList';
 class MyComponent extends React.Component {
   render(){
     return (
-      <div className="MyComponent">
+      <div className="pokemon--container">
         <PokemonList/>
       </div>
     );
