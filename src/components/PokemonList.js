@@ -1,12 +1,13 @@
 import React from "react";
 import PokemonCard from "./PokemonCard";
-import pokemons from "../data/pokemonArray";
+import PropTypes from 'prop-types';
+
 
 class PokemonList extends React.Component {
   render() {
     return (
       <ul className="pokemon--list">
-        {pokemons.map(pokemon => {
+        {this.props.pokemonList.map(pokemon => {
           return (
             <li key={pokemon.id}>
               <PokemonCard
@@ -20,6 +21,10 @@ class PokemonList extends React.Component {
       </ul>
     );
   }
+}
+
+PokemonList.propTypes = {
+  pokemonList: PropTypes.arrayOf(PropTypes.object),
 }
 
 export default PokemonList;
