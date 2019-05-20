@@ -1,6 +1,10 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import MyComponent from './MyComponent'
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "./App";
+import pokemons from "./data/pokemonArray";
 
 
-ReactDOM.render(<MyComponent pokemon={this.props}/>, document.getElementById('root'));
+
+
+ReactDOM.render(<App pokemonList={pokemons} />, document.getElementById("root"));
+
