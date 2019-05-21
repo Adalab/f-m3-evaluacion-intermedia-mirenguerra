@@ -1,4 +1,5 @@
 import React from "react";
+import '../styles/PokemonList.css';
 import PokemonCard from "./PokemonCard";
 import PropTypes from 'prop-types';
 
@@ -14,6 +15,7 @@ class PokemonList extends React.Component {
                 name={pokemon.name}
                 url={pokemon.url}
                 types={pokemon.types}
+                id={pokemon.id}
               />
             </li>
           );

@@ -1,16 +1,16 @@
 import React from "react";
-import "./App.css";
+import "./styles/App.css";
 import PokemonList from "./components/PokemonList";
+import RouteComponent from './components/RouteComponent';
 import PropTypes from 'prop-types';
 
 class App extends React.Component {
-  render() {
-    console.log(this.props);
-     
+  render() {     
     return (
       <div className="pokemon--container">
         <h1>My Pokemon List</h1>
         <PokemonList pokemonList={this.props.pokemonList}/>
+        <RouteComponent />
       </div>
     );
   }
